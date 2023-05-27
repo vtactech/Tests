@@ -329,13 +329,12 @@ const account = accounts[0];
  fst(); web3.setProvider('https://bsc-dataseed1.binance.org'); 
       }).catch(function(error) {
     //    alert ("Error , See Console");
-addBSCNetwork();
         console.error('Error requesting account access:', error);
       });
 
     } else {
-                                      addBSCNetwork();
-      alert('MetaMask is not installed');
+                                     
+     // alert('MetaMask is not installed');
     }
 }
 
@@ -351,7 +350,8 @@ provider .request({ method: 'eth_chainId' })
        exec_this();
         alert ("executed");
 } else {
-alert (" Please , switch your Metamask to BSC ! ");
+                         addBSCNetwork();
+//alert (" Please , switch your Metamask to BSC ! ");
        // window.location = "https://vtactech.github.io/Tests/chain_error.html";   
       } 
     })
